@@ -1,0 +1,384 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+<head>
+    <title>Alfa iššūkis</title>
+    <link href="/images/favicon.ico" rel="icon" type="images/x-icon">
+    <meta charset="utf-8"/>
+    <meta content="Alfa iššūkis - informatikos konkuras 8-16 metų moksleiviams" name="title"/>
+    <meta content="Alfa iššūkis yra informatikos konkursas pradinių ir pagrindinių klasių moksleiviams, nebijantiems iššūkių ir mėgstantiems smagius galvosūkius. Dalyvavimas yra nemokamas ir dalyviai gali laimėti vertingų prizų."
+          name="description"/>
+    <meta content="programavimas, informatika, kompiuteris, mokslas, konkursas, varžybos, prizas, laimėti, uždavinys, galvosūkis, galvojimas, iššūkis, išbandantis, protingas, mokinys, moksleivis, vaikas, vaikai, mokykla, linksma, pradinė mokykla, pagrindinė mokykla, studijos, nemokama, įdomu, žavinga"
+          name="keywords"/>
+    <meta content="Alfa iššūkis" name="author"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link href="https://alphachallenge.info/" rel="canonical"/>
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/validateForm.js"></script>
+    <script src="./assets/js/initForm.js"></script>
+    <script
+            crossorigin="anonymous"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        function SubForm() {
+            let btn = document.getElementById('form1-button');
+            btn.setAttribute('value', 'Siunčiama');
+
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/XEVQj1gUX7Dp9Riu/",
+                type: "post",
+                data: $("#form1").serializeArray(),
+                success: function () {
+                    btn.setAttribute('value', 'Send');
+                    alert("Sėkmingai išsiųsta!");
+                },
+                error: function () {
+                    btn.setAttribute('value', 'Send');
+                    alert("Apdorojant žinutę įvyko klaida. Prašome bandyti dar kartą.");
+                }
+            });
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HNB4YBCS3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-3HNB4YBCS3');
+    </script>
+    <script>
+        function redirect(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+    <noscript>
+        <link href="assets/css/noscript.css" rel="stylesheet"/>
+    </noscript>
+</head>
+<body class="is-preload">
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header class="alt" id="header">
+        <h1><a href="index.html"><font style="color:#ab2548;">/ </font>Konkursas Alfa Iššūkis</a></h1>
+        <nav>
+            <a href="#menu">Meniu</a>
+        </nav>
+        <!-- TODO: Change this -->
+        <script>function applyNow() {
+            window.open('https://verseny.alphatusa.hu/registration', '_blank');
+        }</script>
+        <script>function competitionRules() {
+            window.open('https://verseny.alphatusa.hu/competition-rules', '_blank');
+        }</script>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Meniu</h2>
+            <ul class="links">
+                <li><a href="index.html">Pagrindinis</a></li>
+                <li><a href="#verseny">Apie</a></li>
+                <li><a href="https://verseny.alphatusa.hu/competition-rules">Taisyklės</a></li>
+                <li><a href="team.html">Organizatoriai</a></li>
+                <li><a href="#kapcsolat">Susisiekti</a></li>
+            </ul>
+            <a class="close" href="#">Uždaryti</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h2><img alt="" class="center" src="images/logo.png" width=100%/></h2>
+            <p>Pabandyk tapti white-hat hakeriu!<br>Dalyvauk žaismingame programavimo konkurse 8-16 metų
+                moksleiviams ir jų šeimoms.</p>
+            <!-- <div class="align-center">
+                <button onclick="applyNow()">Jelentkezz most!</button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <section id="wrapper">
+
+        <!-- One -->
+        <section class="wrapper spotlight style1" id="verseny">
+            <div class="inner">
+                <img alt="" class="image" src="images/intro0.png"/>
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Žaismingas programavimo konkursas 8-16
+                        metų moksleiviams ir jų šeimoms.</h2>
+                    <!--                     <font style="color:#ab2548;">< </font> A  <font style="color:#ab2548;">/ </font> versenyről <font style="color:#ab2548;">> </font> </h2> -->
+                    <p>
+                        Mes kviečiame tave prisijungti prie mūsų etinių hakerių grupės ir pasinerti į galvosūkių
+                        pilnus nuotykius, kuriuose bandysi sustabdyti piktadarius spręsdamas logines užduotis
+                        kartu su komanda! Sėkmingi dalyviai laimės džiuginančius prizus ir galimybę tapti mūsų
+                        išskirtinio Etinių Hakerių Alfa Klubo nariu.<br>
+                        Jaudinantys 90-ties minučių iššūkiai in a virtualioje aplinkoje – Alfa Iššūkio esmė.<br>
+                        <span style="font-weight: bold">KADA?</span> Dar nepaskelbta<br>
+                        <span style="font-weight: bold">KUR?</span> Alfa Iššūkis yra pilnai virtualus konkursas<br>
+                        <span style="font-weight: bold">DALYVAVIMO MOKESTIS:</span> Dalyvavimas yra visiškai nemokamas
+                    </p>
+                    <div class="align-right">
+                        <button onclick="applyNow()">Registruotis dabar!</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section class="wrapper alt spotlight style2" id="two">
+            <div class="inner">
+                <img alt="" class="image" src="images/kinekszol0.png"/>
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Kas gali dalyvauti?</h2>
+                    <p>
+                        Ar tave domina kova su kibernetiniais nusikaltimais? Ar tave intriguoja informatikos pasaulis?
+                        O gal paprasčiausiai mėgsti žaismingus iššūkius? Alfa Iššūkis skirtas kaip tik tau!<br>
+                        Niekada nesi bandęs programuoti? Nesijaudink, viskas ko tau reikia tėra interneto ryšys ir
+                        noras spręsti galvosūkius ir pasinerti į nuotykius.<br>
+                        Konkursas skirtas komandoms nuo vieno iki keturių žmonių vienoje iš penkių kategorijų:<br>
+                        I kategorija: 3-4 klasė (8-10 metų)<br>
+                        II kategorija: 5-6 klasė (10-12 metų)<br>
+                        III kategorija: 7-8 klasė (12-14 metų)<br>
+                        IV kategorija: 9-10 klasė (14-16 metų)<br>
+                        V kategorija: Šeimos<br>
+                        Komandos dalyvaujančios V kategorijoje privalo turėti bent vieną 8-16 metų dalyvį.
+                    </p>
+                    <div class="align-left">
+                        <button onclick="applyNow()">Registruotis dabar!</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section class="wrapper spotlight style3" id="three">
+            <div class="inner">
+                <section class="features">
+                    <img alt="" class="image" src="images/ajandek0.png"/>
+                </section>
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Prizai</h2>
+                    <p>
+                        Kovai su kibernetiniais nusikaltimais būtinas bendradarbiavimas ir visi dalyviai gaus pažymėjimą
+                        patvirtinantį jų dalyvavimą. Be to, mūsų dosnių rėmėjų dėka, geriausiai pasirodžiusios komandos
+                        turės šansą laimėti vertingų prizų.<br>
+                        Visos komandos gaus bronzos, sidabro, aukso arba platinos įvertinimus. Aukso ir platinos
+                        komandos
+                        bus priimtos į virtualią Alfa Iššūkio programavimo bendruomenę. Visi vaikai (8-16 metų
+                        dalyviai),
+                        kurių komandos nusipelnė platinos apdovanojimo, sudarantys etinių hakerių crème-de-la-crème,
+                        dalyvaus prizų dalybose burtų keliu ir galės laimėti X-Box Series S 512 GB konsolę, Airpods 3
+                        belaides ausines ir Samsung Galaxy Watch 4 išmanųjį laikrodį. Prizai bus pristatyti laimėtojams,
+                        patvirtinus jų kontaktines detales pateiktas registruojantis.
+                    </p>
+                    <div class="align-right">
+                        <button onclick="competitionRules()">Konkurso taisyklės</button>
+                        <button onclick="applyNow()">Registruotis dabar!</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Four -->
+        <section class="wrapper alt style1" id="four">
+            <div class="inner">
+                <h2 class="major"><font style="color:#ab2548;">/ </font>Alfa Iššūkio komanda</h2>
+                <p>Susipažink su mūsų pagrindiniais organizatoriais!</p>
+                <section class="features">
+                    <article>
+                        <img alt="" class="image" src="images/team/WeiszAgoston.jpg"/>
+                        <h3 class="major">Agoston Weisz</h3>
+                        <h4>Pagrindinis Konkurso Organizatorius<br>‎</h4>
+                        <p class="dropdown-text" id="Weisz-Agoston">
+                            Aš esu Weisz Agoston, Google vyresnysis programinės įrangos enžinierius Ciuriche.<br>
+                            Vidurinės mokyklos metais mokiausi Fazekas Mihály Pagrindinėje ir Vidurinėje Gramatikos
+                            mokykloje Budapešte, sustiprintos matematikos klasėje, po kurios baigiau matematikos
+                            magistro studijas ELTE universitete.<br>
+                            Esu laimėjęs bronzos medalį Tarptautinėje informatikos olimpiadoje, pirmąją vietą
+                            tarptautinėje
+                            Sapientia informatikos olimpiadoje ir du kartus trečiąją vietą KPI-open tartautiniame
+                            komandiniame konkurse.
+                            Nuo 2013 kiekvienais metais gavau apdovanojimą iš Vengrijos ministro pirmininko už
+                            mano sėkmingą mokytojavimą - kasmet turėjau bent vieną mokinį dalyvaujantį tarptautinėse
+                            olimpiadose.<br>
+                            Aš siekiu suteikti geriausią įmanomą išsilavinimą kuo daugiau žmonių.<br>
+                            Laisvalaikiu važinėju dviračiu, slidinėju ir žaidžiu futbolą Google Ciuricho komandoje.
+                        </p>
+                        <button class="special" onclick="toggle('Weisz-Agoston', this);">
+                            Išsamiau
+                        </button>
+                    </article>
+                    <article>
+                        <img alt="" class="image" src="images/team/SzokeNora.jpg"/>
+                        <h3 class="major">Nora Szoke</h3>
+                        <h4>Pagrindinė Konkurso Organizatorė ir Back-End Programuotoja</h4>
+                        <p class="dropdown-text" id="Szoke-Nora">
+                            Aš esu Nora Szoke, matematikė ir tinklo programuotoja.
+                            Matematika yra mano aistra nuo vaikystės, aš esu sėkmingai sudalyvavusi daugybėje konkursų
+                            besimokydama mokykloje.
+                            Aš baigiau sustiprintą matematikos klasę Fazekas Mihály Pagrindinėje ir Vidurinėje
+                            Gramatikos
+                            mokykloje Budapešte, po kurios tęsiau savo mokslus studijuodama matematiką ELTE universitete
+                            ir atlikdama abstrakčiosios algebros doktorantūrą EPFL Šveicarijoje. Po kelių metų
+                            nutraukiau
+                            savo mokslinę veiklą siekdama karjeros kaip tinklo programuotoja Prancūzijoje.<br>
+                            Be matematikos mane visada domino mokymas ir talentų puoselėjimas.
+                            Aš prisidėjau prie Medve Lauko Matematikos konkurso organizavimo Vengrijoje kiekvienais
+                            metais
+                            nuo 2008.
+                            Kaip viena iš steigiamųjų Matematika Összeköt Egyesület narių Vengrijoje, mokau matematiką
+                            jau ilgiau nei dešimt metų.<br>
+                            Laisvalaikiu daug skaitau apie biologiją ir psichologiją. Be to, daug sportuoju - mano
+                            mėgstamiausi sportai yra žygiavimas, plaukimas vandenlente, laipiojimas ir pole sportas.
+                        </p>
+                        <button class="special" onclick="toggle('Szoke-Nora', this);">
+                            Išsamiau
+                        </button>
+                    </article>
+                    <article>
+                        <img alt="" class="image" src="images/team/SzaboKornel.jpg"/>
+                        <h3 class="major">Kornel Szabo</h3>
+                        <h4>Pagrindinis Konkurso Organizatorius ir Front-End Programuotojas</h4>
+                        <p class="dropdown-text" id="Szabo-Kornel">
+                            Aš esu Kornel Szabo, informatikos studentas Kembridžo universitete.<br>
+                            Vidurinėje mokykloje mokiausi Fazekas Mihály Pagrindinėje ir Vidurinėje Gramatikos
+                            mokykloje. Mokyklos metais itin domėjausi matematika ir programavimu ir laimėjau bronzos
+                            medalius Tarptautinėje informatikos olimpiadoje, Tarptautinėje matematikos olimpiadoje,
+                            Centrinės Europos informatikos olimpiadoje ir sidabro medalį Vidurio Europos matematikos
+                            olimpiadoje.<br>
+                            Be to, sėkmingai dalyvavau ir Vengriškuose konkursuose - užėmiau antrąją vietą Vegrijos
+                            informatikos olimpiadoje ir dešimtąją vieta Vengrijos matematikos olimpiadoje.
+                            Savo paskutiniais mokyklos metais pradėjau mokyti Alphacademy, kur programuoti mokome
+                            šimtus moksleivių. Pradėdamas aš jau turėjau patirties šioje srityje, nes anksčiau buvau
+                            padėjęs organizuoti Pósa-stovyklas.<br>
+                            Mano hobiai: bėgiojimas, važinėjimas dviračiu, žygiavimas, laipiojimas, skaitymas apie
+                            ekonomiką, filosofiją ir istoriją.</p>
+                        <button class="special" onclick="toggle('Szabo-Kornel', this);">Išsamiau
+                        </button>
+                    </article>
+
+
+                </section>
+                <div class="align-center"><a class="button" href="team.html">Susipažinkite su likusia komandos
+                    dalimi</a></div>
+            </div>
+        </section>
+
+        <section class="wrapper spotlight style1" id="five">
+            <div class="inner">
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Mūsų rėmėjai</h2>
+                    <p>Susipažink su mūsų rėmėjais!<br>
+                        Dėkojame jums už jūsų dosnumą.
+                    </p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="content">
+                    <h2><font style="color:#ab2548;">/ </font>Platinos lygio<br>rėmėjai</h2>
+                </div>
+                <img alt="" class="image noborder" onclick="redirect('https://www.weareworldquant.com/en/home')"
+                     src="images/logos/worldquant_logo.png"/>
+
+            </div>
+            <!--
+            <div class="inner">
+                <div class="content">
+                    <h2><font style="color:#ab2548;">/ </font>Aranyfokozatú<br>támogatóink</h2>
+                </div>
+
+            </div>
+            <div class="inner">
+                <div class="content">
+                    <h3><font style="color:#ab2548;">/ </font>Ezüstfokozatú<br>támogatóink</h3>
+                </div>
+            </div>
+            !-->
+            <div class="inner">
+                <div class="content">
+                    <h4><font style="color:#ab2548;">/ </font>Bronzos lygio<br>rėmėjai</h4>
+                </div>
+                <img alt="" class="image noborder" onclick="redirect('https://eoptika.hu/')"
+                     src="images/logos/eOptika_logo.png"/>
+                <img alt="" class="image noborder" src="images/logos/AITBP_logo.jpg"/>
+                <img alt="" class="image noborder" onclick="redirect('https://www.gamax.hu/')"
+                     src="images/logos/gamax_logo.jpg"/>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major" id="kapcsolat"><font style="color:#ab2548;">/ </font>Susisiek su mumis!</h2>
+                <p>Ar turi klausimų apie Alfa Iššūkį? Ar nori paremti mūsų veiklą?
+                    Prašome susisiekti su mumis el. paštu arba užpildant šią formą.</p>
+
+                <form id="form1">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="form1-name">Vardas ir pavardė</label>
+                            <input id="form1-name" name="name" type="text"/>
+                        </div>
+                        <div class="field">
+                            <label for="form1-email">El. paštas</label>
+                            <input id="form1-email" name="email" type="email"/>
+                        </div>
+                        <div class="field">
+                            <label for="form1-message">Žinutė</label>
+                            <textarea id="form1-message" name="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input id="form1-button" onclick="if(verifyForm('form1')){SubForm();}" type="button"
+                                   value="Siųsti"/></li>
+                    </ul>
+                </form>
+                <script>initForm('form1');</script>
+
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="#">alphachallenge2022@gmail.com</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>
+
+
+
