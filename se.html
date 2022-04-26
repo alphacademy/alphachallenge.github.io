@@ -1,10 +1,348 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html lang="en">
 <head>
-    <meta charset="UTF-8" >
-    <title>Title</title>
+    <title>Alphachallenge</title>
+    <link href="/images/favicon.ico" rel="icon" type="images/x-icon">
+    <meta charset="utf-8"/>
+    <meta content="Alphachallenge computer science competition for students aged between 8 and 16" name="title"/>
+    <meta content="Alphachallenge is a computer science competition for those students in primary or secondary education, that aren't afraid of challenges and like fun puzzles and problems. Taking part is free and the contestants can win valuable prizes."
+          name="description"/>
+    <meta content="programming, computer science, computer, science, competition, contest, prize, win, problem, puzzle, thinking, challenge, challenging, smart, student, pupil, child, children, school, fun, primary school, secondary school, studies, free, interesting, fascinating"
+          name="keywords"/>
+    <meta content="Alphachallenge" name="author"/>
+    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
+    <link href="assets/css/main.css" rel="stylesheet"/>
+    <link href="https://alphachallenge.info/" rel="canonical"/>
+    <script src="./assets/js/toggle.js"></script>
+    <script src="./assets/js/validateForm.js"></script>
+    <script src="./assets/js/initForm.js"></script>
+    <script
+            crossorigin="anonymous"
+            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+            src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        function SubForm() {
+            let btn = document.getElementById('form1-button');
+            btn.setAttribute('value', 'Sending message');
+
+            $.ajax({
+                url: "https://api.apispreadsheets.com/data/XEVQj1gUX7Dp9Riu/",
+                type: "post",
+                data: $("#form1").serializeArray(),
+                success: function () {
+                    btn.setAttribute('value', 'Send');
+                    alert("Successfully sent!");
+                },
+                error: function () {
+                    btn.setAttribute('value', 'Send');
+                    alert("An error has occured while processing the message. Please try again.");
+                }
+            });
+        }
+    </script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HNB4YBCS3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-3HNB4YBCS3');
+    </script>
+    <script>
+        function redirect(url) {
+            window.open(url, '_blank');
+        }
+    </script>
+    <noscript>
+        <link href="assets/css/noscript.css" rel="stylesheet"/>
+    </noscript>
 </head>
-<body>
+<body class="is-preload">
+
+<!-- Page Wrapper -->
+<div id="page-wrapper">
+
+    <!-- Header -->
+    <header class="alt" id="header">
+        <h1><a href="index.html"><font style="color:#ab2548;">/ </font>AlphaChallenge</a></h1>
+        <nav>
+            <a href="#menu">Meny</a>
+        </nav>
+        <!-- TODO: Change this -->
+        <script>function applyNow() {
+            window.open('https://verseny.alphatusa.hu/registration', '_blank');
+        }</script>
+        <script>function competitionRules() {
+            window.open('https://verseny.alphatusa.hu/competition-rules', '_blank');
+        }</script>
+    </header>
+
+    <!-- Menu -->
+    <nav id="menu">
+        <div class="inner">
+            <h2>Meny</h2>
+            <ul class="links">
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="#verseny">Om oss</a></li>
+                <li><a href="https://verseny.alphatusa.hu/competition-rules">Regler</a></li>
+                <li><a href="csapat.html">Organisatörer</a></li>
+                <li><a href="#kapcsolat">Kontakt</a></li>
+            </ul>
+            <a class="close" href="#">Stäng</a>
+        </div>
+    </nav>
+
+    <!-- Banner -->
+    <section id="banner">
+        <div class="inner">
+            <h2><img alt="" class="center" src="images/logo.png" width=100%/></h2>
+            <p>Testa på att vara en white-hat hacker!<br>Delta i vår roliga programmeringstävling för 8-16 åringar och deras familjer.</p>
+            <!-- <div class="align-center">
+                <button onclick="applyNow()">Jelentkezz most!</button>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- Wrapper -->
+    <section id="wrapper">
+
+        <!-- One -->
+        <section class="wrapper spotlight style1" id="verseny">
+            <div class="inner">
+                <img alt="" class="image" src="images/intro0.png"/>
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>rolig programmingstävling för 8-16 åringar och deras familjer</h2>
+                    <p>
+                        Vi bjuder in dig till att följa med vår grupp av etiska hackare på ett problemlösningsäventyr och besegra skurkar genom att lösa logikbaserade problem som en del av ett lag! Framgångsrika deltagare kommer bli belönade med spännande priser, och ett medlemskap i vår exlusiva Ethical Hackers' Alpha Club.<br>'
+
+                        Spännande 90-minutersutmaningar i en virtuell omgivning - det är vad Alpha-Challenge handlar om.<br>
+
+                        <span style="font-weight: bold">NÄR?</span> Mer information kommer snart!<br>
+                        <span style="font-weight: bold">VAR?</span> Alpha-Challenge hålls fullständigt online!<br>
+                        <span style="font-weight: bold">KOSTNAD</span> Det är helt gratis att delta!
+                    </p>
+                    <div class="align-right">
+                        <button onclick="applyNow()">Anmäl dig nu!</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Two -->
+        <section class="wrapper alt spotlight style2" id="two">
+            <div class="inner">
+                <img alt="" class="image" src="images/kinekszol0.png"/>
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Vem kan delta?</h2>
+                    <p>
+
+                        Brinner du för att bekämpa cyberbrott, fascineras du av datorernas värld, eller gillar du helt enkelt bara en rolig utmaning? Då har Alpha-Challenge något för dig!<br>
+
+                        Har du aldrig testat programmering förut? Oroa dig inte, allt du behöver - förutom en stabil internetuppkoppling - är en passion för pussel och äventyr.<br>
+
+                        Tävlingen är öppen för lag av upp till fyra deltagare, i de fyra följande kategorierna: <br>
+                        Kategori I: Klasserna 3-4 (ålder 8-10)<br>
+                        Kategori II: Klasserna 5-6 (ålder 10-12)<br>
+                        Kategori III: Klasserna 7-8 (ålder 12-14)<br>
+                        Kategori IV: Klasserna 9-10 (ålder 14-16)<br>
+                        Kategori V: Familjer<br>
+
+                        Lag i kategori V måste inkludera åtminstone en deltagare i åldrarna 8-16.
+                    </p>
+                    <div class="align-left">
+                        <button onclick="applyNow()">Anmäl dig nu!</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Three -->
+        <section class="wrapper spotlight style3" id="three">
+            <div class="inner">
+                <section class="features">
+                    <img alt="" class="image" src="images/ajandek0.png"/>
+                </section>
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Priser</h2>
+                    <p>
+                        Att bekämpa cyberattacker kväver samarbete, och alla deltagare kommer få ett certifikat som ¤bekräftar deras bidrag. Tack vare våra generösa sponsorer kommer de bäst presterande lagen ha chansen att vinna värdefulla priser.<br>
+                        All lag kommer få en brons-, silver-, guld- eller platinumrankning. De med guld- eller platinumrankning kommer få tillgång till den virtuella Alpha Challenge programmeringscommunityn. Alla barn (deltagare i åldrarna 8-16) i ett platinumlag, vilka utgör toppen av etiska hackare, kommer ingå i en lottning med chansen att vinna ett X-Box Series S 512 GB, Airpods 3 trådlösa hörlurar och en Samsung Galaxy Watch 4 smartwatch. Priser skickas till vinnaren, efter verifiering att kontaktdetaljerna som gavs i registreringen är korrekta.
+
+                    </p>
+                    <div class="align-right">
+                        <button onclick="competitionRules()">Tävlingsregler</button>
+                        <button onclick="applyNow()">Anmäl dig nu!</button>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Four -->
+        <section class="wrapper alt style1" id="four">
+            <div class="inner">
+                <h2 class="major"><font style="color:#ab2548;">/ </font>The Alpha-Challenge Team</h2>
+                <p>Lär känna våra huvudorganisatörer!</p>
+                <section class="features">
+                    <article>
+                        <img alt="" class="image" src="images/team/WeiszAgoston.jpg"/>
+                        <h3 class="major">Agoston Weisz</h3>
+                        <h4>Huvudorganisatör<br>‎</h4>
+                        <p class="dropdown-text" id="Weisz-Agoston">
+                            Jag heter Weisz Agoston, och jobbar som Senior Software Engineer vid Google i Zurich.<br>
+                            Jag spenderade mina gymnasieår vid Fazekas Mihaly högstadium och gymnasie i Budapest, i en mattespetsklass, och fortsatte därifrån till ELTE för en master i matematik.
+                            Jag har vunnit bronsmedalj i den internationella programmeringsolympiaden, hamnade på förstaplats i programmeringstävlingen Sepientia, och hamnade tredjeplats i den internationella lagtävlingen.
+                            Sedan 2013 har jag belönats med ett pris från premiärministern för mina framgångar som lärare - åtminstone en av mina elever har kvalat till den internationella olympiaden varje år.<br>
+
+                            Jag brinner för att ge den bästa utbildningen möjlig till så många människor som möjligt. På min fritid cyklar jag, åker skidor, och spelar fotboll i Google Zurichs fotbollslag.
+                        </p>
+                        <button class="special" onclick="toggle('Weisz-Agoston', this);">
+                            Mer information
+                        </button>
+                    </article>
+                    <article>
+                        <img alt="" class="image" src="images/team/SzokeNora.jpg"/>
+                        <h3 class="major">Nora Szoke</h3>
+                        <h4>Huvudorganisatör och back-endutvecklare</h4>
+                        <p class="dropdown-text" id="Szoke-Nora">
+                            Jag heter Nora Szoke, och jobbar som matematiker och webbutvecklare.
+                            Matematik har varit min passion sedan barndomen, och jag har haft mycket framgång i mattetävlingar under min gymnasietid.
+                            Jag fick min gymnasieexamen från mattespetslinjen på Fazekas Mihaly högstadium och gymnasium i Budapest, varefter jag fortsatte mina studier som matematiker på ELTE, och doktorerade inom abstrakt algebra på Polytechnique Fédérale de Lausanne i Schweiz. Efter några år la jag av med forskning för att istället bedriva en karriär inom webutveckling i Frankrike.
+
+                            Förutom matte har jag också alltid varit väldigt intresserad av utbildning och att hjälpa talang att blomstra. Jag har hjälp till med att organisera Medve Outdoors Mathematics Competition i Ungern varje år sedan 2008. Som en av de grundande medlemmarna av A Matematika Összeköt Egyesület i Ungern har jag utbildat intresserade matematikelever i över ett decennium.
+
+                            Som hobby läser jag mycket om biologi och psykologi och tränar mycket: mina favoritsporter är vandring, wakeboard, väggklättring och stavsporter.
+
+                        </p>
+                        <button class="special" onclick="toggle('Szoke-Nora', this);">
+                            Mer information
+                        </button>
+                    </article>
+                    <article>
+                        <img alt="" class="image" src="images/team/SzaboKornel.jpg"/>
+                        <h3 class="major">Kornel Szabo</h3>
+                        <h4>Huvudorganisatör och front-endutvecklare</h4>
+
+                        <p class="dropdown-text" id="Szabo-Kornel">
+                            Jag heter Kornel Szabo, och pluggar datavetenskap på universitetet i Cambridge. <br> <br>
+
+                            Jag tillbringade mina gymnasieår på Fazekas Mihaly högstadium och Gymnasium. Under dessa år har jag redan hunnit göra många tävlingar inom matematik och programmering, vilket har hjälpt mig vinna bronsmedalj i den internationella programmeringsolympiaden, den internationella matteolympiaden och den centraleuropeiska programmeringsolympiaden, och silvermedalj i den Mitteleuropeiska matteolympiaden.<br><br>
+
+                            Jag har också haft framgång i ungerska tävlingar: jag kom på andraplats i den ungerska programmeringsolympiaden, och 10e plats i den ungerska matteolympiaden. Under mitt sista gymnasieår började jag lära ut för Alphacademy, där vi lär ut programmering till hundratals elever. Vid det laget hade jag redan en del erfarenhet, eftersom jag redan hade hjälpt till med att organisera Posa-camps under tidigare år.<br>
+                            Mina hobbyer inkluderar cykling, att vandring, väggklättring och att läsa om ekonomi, filosofi och historia.</p>
+                        <button class="special" onclick="toggle('Szabo-Kornel', this);">Mer information
+                        </button>
+                    </article>
+
+
+                </section>
+                <div class="align-center"><a class="button"><!-- href="csapat.html"-->Träffa resten av teamet
+                    (TODO)</a></div>
+            </div>
+        </section>
+
+        <section class="wrapper spotlight style1" id="five">
+            <div class="inner">
+                <div class="content">
+                    <h2 class="major"><font style="color:#ab2548;">/ </font>Våra sponsorer</h2>
+                    <p>Lär känna våra sponsorer!<br>
+                        Vi tackar er för ert stöd.
+                    </p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="content">
+                    <h2><font style="color:#ab2548;">/ </font>Platinumsponsorer</h2>
+                </div>
+                <img alt="" class="image noborder" onclick="redirect('https://www.weareworldquant.com/en/home')"
+                     src="images/logos/worldquant_logo.png"/>
+
+            </div>
+            <!--
+            <div class="inner">
+                <div class="content">
+                    <h2><font style="color:#ab2548;">/ </font>Aranyfokozatú<br>támogatóink</h2>
+                </div>
+
+            </div>
+            <div class="inner">
+                <div class="content">
+                    <h3><font style="color:#ab2548;">/ </font>Ezüstfokozatú<br>támogatóink</h3>
+                </div>
+            </div>
+            !-->
+            <div class="inner">
+                <div class="content">
+                    <h4><font style="color:#ab2548;">/ </font>Bronssponsorer</h4>
+                </div>
+                <img alt="" class="image noborder" onclick="redirect('https://eoptika.hu/')"
+                     src="images/logos/eOptika_logo.png"/>
+                <img alt="" class="image noborder" src="images/logos/AITBP_logo.jpg"/>
+                <img alt="" class="image noborder" onclick="redirect('https://www.gamax.hu/')"
+                     src="images/logos/gamax_logo.jpg"/>
+            </div>
+        </section>
+
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="inner">
+                <h2 class="major" id="kapcsolat"><font style="color:#ab2548;">/ </font>Kontakta oss!</h2>
+                <p>Har du frågor om Alpha-Challenge eller är du intresserad av att stödja våra aktiviteter? Hör gärna av er via email eller genom kontaktformuläret nedan.</p>
+
+                <form id="form1">
+                    <div class="fields">
+                        <div class="field">
+                            <label for="form1-name">Fullständigt namn</label>
+                            <input id="form1-name" name="name" type="text"/>
+                        </div>
+                        <div class="field">
+                            <label for="form1-email">Epost</label>
+                            <input id="form1-email" name="email" type="email"/>
+                        </div>
+                        <div class="field">
+                            <label for="form1-message">Meddelande</label>
+                            <textarea id="form1-message" name="message" rows="4"></textarea>
+                        </div>
+                    </div>
+                    <ul class="actions">
+                        <li><input id="form1-button" onclick="if(verifyForm('form1')){SubForm();}" type="button"
+                                   value="Skicka"/></li>
+                    </ul>
+                </form>
+                <script>initForm('form1');</script>
+
+                <ul class="contact">
+                    <li class="icon solid fa-envelope"><a href="#">alphatusa2022@gmail.com</a></li>
+                </ul>
+                <ul class="copyright">
+                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+</div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
 
 </body>
 </html>
