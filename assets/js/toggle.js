@@ -1,11 +1,11 @@
 function toggle(id, btn){
     let obj = document.getElementById(id);
     if(obj.style.maxHeight===obj.scrollHeight.toString()+"px"){
-        btn.textContent = 'Bővebb információ';
+        btn.textContent = 'More details';
         obj.style.maxHeight = '0';
     }
     else{
-        btn.textContent = 'Kevesebb információ';
+        btn.textContent = 'Fewer details';
         obj.style.maxHeight = obj.scrollHeight.toString()+"px";
         console.log(obj.scrollHeight.toString());
     }
