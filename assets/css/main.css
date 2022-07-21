@@ -3094,6 +3094,7 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 		.dropdown-text{
+			font-size: 0.9em;
 			max-height: 0;
 			overflow-y: hidden;
 			transition: max-height 1s ease;
