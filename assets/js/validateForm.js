@@ -44,7 +44,7 @@ function verifyForm(id){//Name required, Email required, and matches some regexp
         message.setCustomValidity('');
     }
 
-    if(btn.value !== "Sending"){//Ongoing send request
+    if(btn.value !== "Send"){//Ongoing send request
         console.log(btn.value);
         passedCheck = false;
     }
