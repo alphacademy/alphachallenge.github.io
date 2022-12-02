@@ -1,424 +1,519 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
-
-<head>
+  <head>
     <title>Our team</title>
-    <link href="/images/favicon.ico" rel="icon" type="images/x-icon">
+    <link href="/images/favicon.ico" rel="icon" type="images/x-icon" />
     <meta charset="utf-8" />
-    <meta content="Alphatron computer science competition for students aged between 8 and 16" name="title" />
     <meta
-        content="Alphatron is a computer science competition for those students in primary or secondary education, that aren't afraid of challenges and like fun puzzles and problems. Taking part is free and the contestants can win valuable prizes."
-        name="description" />
+      content="Alphatron computer science competition for students aged between 8 and 16"
+      name="title"
+    />
     <meta
-        content="programming, computer science, computer, science, competition, contest, prize, win, problem, puzzle, thinking, challenge, challenging, smart, student, pupil, child, children, school, fun, primary school, secondary school, studies, free, interesting, fascinating"
-        name="keywords" />
+      content="Alphatron is a computer science competition for those students in primary or secondary education, that aren't afraid of challenges and like fun puzzles and problems. Taking part is free and the contestants can win valuable prizes."
+      name="description"
+    />
+    <meta
+      content="programming, computer science, computer, science, competition, contest, prize, win, problem, puzzle, thinking, challenge, challenging, smart, student, pupil, child, children, school, fun, primary school, secondary school, studies, free, interesting, fascinating"
+      name="keywords"
+    />
     <meta content="Alphatron" name="author" />
-    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
     <link href="assets/css/main.css" rel="stylesheet" />
     <link href="https://alphatron.io/" rel="canonical" />
     <script src="./assets/js/toggle.js"></script>
     <script src="./assets/js/validateForm.js"></script>
     <script src="./assets/js/initForm.js"></script>
-    <script crossorigin="anonymous" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script
+      crossorigin="anonymous"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      src="https://code.jquery.com/jquery-3.4.1.js"
+    ></script>
     <script>
-        function SubForm() {
-            let btn = document.getElementById('form1-button');
-            btn.setAttribute('value', 'Sending message');
+      function SubForm() {
+        let btn = document.getElementById("form1-button");
+        btn.setAttribute("value", "Sending message");
 
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/XEVQj1gUX7Dp9Riu/",
-                type: "post",
-                data: $("#form1").serializeArray(),
-                success: function () {
-                    btn.setAttribute('value', 'Send');
-                    alert("Successfully sent!");
-                },
-                error: function () {
-                    btn.setAttribute('value', 'Send');
-                    alert("An error has occured while processing the message. Please try again.");
-                }
-            });
-        }
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/XEVQj1gUX7Dp9Riu/",
+          type: "post",
+          data: $("#form1").serializeArray(),
+          success: function () {
+            btn.setAttribute("value", "Send");
+            alert("Successfully sent!");
+          },
+          error: function () {
+            btn.setAttribute("value", "Send");
+            alert(
+              "An error has occured while processing the message. Please try again."
+            );
+          },
+        });
+      }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HNB4YBCS3"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3HNB4YBCS3"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag("js", new Date());
 
-        gtag('config', 'G-3HNB4YBCS3');
+      gtag("config", "G-3HNB4YBCS3");
     </script>
     <script>
-        function redirect(url) {
-            window.open(url, '_blank');
-        }
+      function redirect(url) {
+        window.open(url, "_blank");
+      }
     </script>
     <noscript>
-        <link href="assets/css/noscript.css" rel="stylesheet" />
+      <link href="assets/css/noscript.css" rel="stylesheet" />
     </noscript>
-</head>
+  </head>
 
-<body class="is-preload">
-
+  <body class="is-preload">
     <!-- Page Wrapper -->
     <div id="page-wrapper">
+      <!-- Header -->
+      <header class="alt" id="header">
+        <h1>
+          <a href="index.html">
+            <font style="color: #ab2548">/ </font>Our team
+          </a>
+        </h1>
+        <nav>
+          <a href="#menu">Menu</a>
+        </nav>
+        <!-- TODO: Change this -->
+        <script>
+          function applyNow() {
+            window.open("https://contest.alphatron.io/registration", "_blank");
+          }
+        </script>
+        <script>
+          function competitionRules() {
+            window.open(
+              "https://contest.alphatron.io/competition-rules",
+              "_blank"
+            );
+          }
+        </script>
+      </header>
 
-        <!-- Header -->
-        <header class="alt" id="header">
-            <h1><a href="index.html">
-                    <font style="color:#ab2548;">/ </font>Our team
-                </a></h1>
-            <nav>
-                <a href="#menu">Menu</a>
-            </nav>
-            <!-- TODO: Change this -->
-            <script>function applyNow() {
-                    window.open('https://contest.alphatron.io/registration', '_blank');
-                }</script>
-            <script>function competitionRules() {
-                    window.open('https://contest.alphatron.io/competition-rules', '_blank');
-                }</script>
+      <!-- Menu -->
+      <nav id="menu">
+        <div class="inner">
+          <h2>Menu</h2>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contest">About</a></li>
+            <li>
+              <a href="https://contest.alphatron.io/competition-rules">Rules</a>
+            </li>
+            <li><a href="team.html">Organisers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="close" href="#">Close</a>
+        </div>
+      </nav>
+      <!-- Wrapper -->
+      <section id="wrapper">
+        <header>
+          <div class="inner">
+            <center>
+              <!-- <h2><font style="color:#ab2548;">< </font> A  <font style="color:#ab2548;">/ </font> csapatunk <font style="color:#ab2548;">> </font></h2> -->
+              <h2>Our team</h2>
+            </center>
+            <p>Meet the team that is behind this initiative!</p>
+          </div>
         </header>
 
-        <!-- Menu -->
-        <nav id="menu">
-            <div class="inner">
-                <h2>Menu</h2>
-                <ul class="links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="#contest">About</a></li>
-                    <li><a href="https://contest.alphatron.io/competition-rules">Rules</a></li>
-                    <li><a href="team.html">Organisers</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a class="close" href="#">Close</a>
+        <!-- Content -->
+        <div class="wrapper">
+          <div class="inner">
+            <h3 class="major">
+              <font style="color: #ab2548">/ </font>Who are we?
+            </h3>
+            <p>
+              Our organising team is made up of enthusiastic volunteers who are
+              dedicated to the cause of creating opportunities for the youth to
+              get to know the field of computer science. Many organsiers are
+              tutoring students or are taking part in talent development as a
+              hobby beside their career in computer science.<br />
+              We believe that today's mainstream methods of education are not
+              suitable for portraying computer science as an interesting and fun
+              field, which is why we want to use our decades of experience in
+              teaching to popularize new ways of approaching informatics.<br />
+              This challenge is one step in that direction. Our contestants will
+              experience that the problems that arise in the life of a
+              programmer can be fun and enjoyable.
+            </p>
+            <p></p>
+
+            <section class="features">
+              <article>
+                <img alt="" class="image" src="images/team/WeiszAgoston.jpg" />
+                <h3 class="major">Agoston Weisz</h3>
+                <h4>Main Event Organiser<br />‎</h4>
+                <p class="dropdown-text" id="Weisz-Agoston">
+                  I am Weisz Agoston, a Senior Software Engineer at Google in
+                  Zurich.<br />
+                  I have spent my high-school years at the Fazekas Mihály
+                  Primary and Secondary Grammar School of Budapest, in a
+                  mathematics-focused class, from where I have gone to ELTE for
+                  a research MSc in mathematics. Középiskolás tanulmányaimat a
+                  Budapesti Fazekas Mihály Gyakorló Általános Iskola és I have
+                  won a bronze medal at the International Olympiad in
+                  Informatics, got first place at the Sapientia international
+                  informatics olympiad, and got third place twice on the
+                  KPI-open international team contest. Since 2013, I have
+                  received an award from the prime minister every year for my
+                  successful teaching - I have had at least one student on the
+                  international olympiads every year.<br />
+                  I am dedicated to providing the best possible education to as
+                  many people as I can.<br />
+                  In my free time, I cycle, ski and play football in the Google
+                  Zurich football team.
+                </p>
+                <button
+                  class="special"
+                  onclick="toggle('Weisz-Agoston', this);"
+                >
+                  More details
+                </button>
+              </article>
+              <article>
+                <img alt="" class="image" src="images/team/SzokeNora.jpg" />
+                <h3 class="major">Nora Szoke</h3>
+                <h4>Main Event Organiser and Back-End Developer</h4>
+                <p class="dropdown-text" id="Szoke-Nora">
+                  I am Nora Szoke, mathematician and web developer. Mathematics
+                  has been my passion ever since my childhood, I have
+                  succesfully participated in a lot of contests as a high
+                  schooler. I had obtained my Érettségi at the special
+                  mathematics class of the Fazekas Mihály Primary and Secondary
+                  Grammar School of Budapest, after which I continued my studies
+                  as a mathematician at ELTE, with a PhD at abstract algebra on
+                  the Polytechnique Fédérale de Lausanne university in École,
+                  Switzerland. After a couple of years, I have abandoned
+                  research to pursue a career in web development in France.<br /><br />
+                  Besides mathematics, I have always been very interested in
+                  teaching and nurturing talent. I have taken part in organizing
+                  the Medve Outdoors Mathematics Competition in Hungary every
+                  year since 2008. As one of the founding members of the A
+                  Matematika Összeköt Egyesület in Hungary, I have been teaching
+                  interested students mathematics for more than a decade.<br /><br />
+                  As a hobby, I read a lot about biology and psychology, and do
+                  a lot of exercise: my favourite sports are hiking, wakeboard,
+                  wall climbing and pole sports.
+                </p>
+                <button class="special" onclick="toggle('Szoke-Nora', this);">
+                  More details
+                </button>
+              </article>
+              <article>
+                <img alt="" class="image" src="images/team/SzaboKornel.jpg" />
+                <h3 class="major">Kornel Szabo</h3>
+                <h4>Main Event Organiser and Front-End Developer</h4>
+
+                <p class="dropdown-text" id="Szabo-Kornel">
+                  I'm Kornel Szabo, a computer science student at the University
+                  of Cambridge.<br /><br />
+                  I have spent my high school years at the special mathematics
+                  class of the Fazekas Mihály Primary and Secondary Grammar
+                  School. I have already done a lot of mathematics and
+                  competitive programming in these years, which has allowed me
+                  to get bronze medals at the International Olympiad in
+                  Informatics, the International Mathematical Olympiad, the
+                  Central-European Olympiad in Informatics and a silver medal at
+                  the Middle-European Olympiad in Mathematics.
+                  <br /><br />
+                  I was also successful in Hungarian competitions, I came second
+                  in the Hungarian Olympiad in Informatics, and 10th on the
+                  Hungarian Olympiad in Mathematics. In my final year at high
+                  school, I started teaching in Alphacademy, where we teach
+                  programming for hundreds of students. I have already had some
+                  experience by that point, as I had already helped with
+                  organising Pósa-camps as a high schooler.
+                  <br />
+                  My hobbies include running, cycling, hiking, wall climbing and
+                  reading about economics, philosophy and history.
+                </p>
+                <button class="special" onclick="toggle('Szabo-Kornel', this);">
+                  More details
+                </button>
+              </article>
+              <article>
+                <img
+                  alt=""
+                  class="image"
+                  src="images/team/HorvathZsombor.jpg"
+                />
+                <h3 class="major">Zsombor Horvath</h3>
+                <h4>Backend Developer</h4>
+
+                <p class="dropdown-text" id="Zsombor-Horvath">
+                  My name is Zsombor Horvath, I am a web developer and a junior
+                  student at Fazekas High School in Budapest.
+                  <br />
+                  Besides my school studies, I have been learning to code for a
+                  long time in a self-taught way. I work for an ed-tech company
+                  called Redmenta as a software engineer. Furthermore, I teach
+                  C++ programming language and algorithms to students in
+                  Alphacademy. Thanks to my American connections, I managed to
+                  spend a semester in the United States, where besides
+                  establishing new connections, I could improve my language
+                  skills as well. With the help of my friend, we won 3rd prize
+                  in the Hungarian Innovation Competition with our study about
+                  decentralized logistics systems.
+                  <br />
+                  I am also an active participant in various hackathons, which
+                  are usually held offline. My other hobbies include studying
+                  artificial intelligence, reading, and going to the gym.
+                </p>
+                <button
+                  class="special"
+                  onclick="toggle('Zsombor-Horvath', this);"
+                >
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/WillPinkerton.jpg" />
+                <h3 class="major">Will Pinkerton</h3>
+                <h4>Event Organiser</h4>
+
+                <p class="dropdown-text" id="Will-Pinkerton">
+                  Hello! I'm Will, a computer science student at the University
+                  of Cambridge. In the past I have performed in a few
+                  hackathons, and attended various cybersecurity bootcamps. I
+                  enjoy the problem-solving nature of computer science, and the
+                  intricacies that come along with scaling solutions. My hobbies
+                  include boxing, reading, and coding.
+                </p>
+                <button
+                  class="special"
+                  onclick="toggle('Will-Pinkerton', this);"
+                >
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/JerielChua.jpg" />
+                <h3 class="major">Jeriel Chua</h3>
+                <h4>Leader of Team Singapore</h4>
+
+                <p class="dropdown-text" id="Jeriel-Chua">
+                  Hi! I’m Jeriel, a linguistics undergraduate student at the
+                  University of Cambridge. I enjoy thinking about the structure
+                  and organisation of English and other languages. To me, there
+                  are many parallels in the ways linguists go about thinking
+                  about the syntax (grammar) of natural languages and the ways
+                  programmers issue computers instructions through the medium of
+                  code — which is in many ways a language of its own. My
+                  pastimes include constructing linguistic diagrams, teaching,
+                  keeping fit, and spending time outdoors — walking about zoos
+                  and gardens.
+                </p>
+                <button class="special" onclick="toggle('Jeriel-Chua', this);">
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/WooJiaHao.jpg" />
+                <h3 class="major">Woo Jia Hao</h3>
+                <h4>Member of Team Singapore</h4>
+
+                <p class="dropdown-text" id="WooJiaHao">
+                  Hello! I am Jia Hao. I started my journey in software at 15
+                  and have been a part of different projects — from developing
+                  gesture-based accessibility frameworks in Android to
+                  conducting research in Natural Language Processing (NLP)! I
+                  also talk about software and open-source on my blog and create
+                  guides to help developers lay their foundations in various
+                  areas like Android development and version control. In my
+                  downtime, I like going for jogs, watching Marvel shows, and
+                  hanging out with my friends.
+                </p>
+                <button class="special" onclick="toggle('WooJiaHao', this);">
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/ChenJiaWei.jpg" />
+                <h3 class="major">Chen Jia Wei</h3>
+                <h4>Member of Team Singapore</h4>
+
+                <p class="dropdown-text" id="ChenJiaWei">
+                  Hi, I'm Jia Wei, a first year Business Analytics student
+                  studying in the National University of Singapore. I'm
+                  relatively new to the field of computing and I'm currently
+                  exploring the different areas of computing. Currently, I
+                  aspire to work in financial or marketing analytics. My hobbies
+                  are astronomy, playing all sorts games and recreational sports
+                  such as badminton.
+                </p>
+                <button class="special" onclick="toggle('ChenJiaWei', this);">
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/ChenGuanZhou.jpg" />
+                <h3 class="major">Chen Guan Zhou</h3>
+                <h4>Member of Team Singapore</h4>
+
+                <p class="dropdown-text" id="ChenGuanZhou">
+                  I'm Guanzhou, a computer science student at the National
+                  University of Singapore. My journey in computer science has
+                  been exciting thus far and I look forward to exploring more
+                  domains in computer science. I love problem solving and
+                  algorithmic thinking and I am particularly interested in
+                  software engineering and quantitative finance fields. In my
+                  free time, I enjoy playing chess and racket sports such as
+                  badminton and squash
+                </p>
+                <button class="special" onclick="toggle('ChenGuanZhou', this);">
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/AlvinJiang.jpg" />
+                <h3 class="major">Alvin Jiang</h3>
+                <h4>Member of Team Singapore</h4>
+
+                <p class="dropdown-text" id="AlvinJiang">
+                  Hello! I’m Alvin, a Year 1 student studying Computer Science
+                  at National University of Singapore. In the past, I have
+                  participated in a few Math Olympiad and Physics Olympiad
+                  competitions, and really enjoyed trying to solve those tough
+                  problems and feeling the rush of learning new techniques and
+                  concepts. In computer science, these problems are much more
+                  dynamic and interesting, which is why I am excited for this
+                  opportunity to bring the joy of problem solving to kids! In my
+                  free time, I like playing badminton, cycling and just being
+                  outdoors.
+                </p>
+                <button class="special" onclick="toggle('AlvinJiang', this);">
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/EllieVitanova.jpg" />
+                <h3 class="major">Ellie Vitanova</h3>
+                <h4>Event Organiser</h4>
+
+                <p class="dropdown-text" id="EllieVitanova">
+                  Hi! I’m Ellie, and I’m a second-year Computer Science
+                  undergraduate at the University of Cambridge. I have always
+                  had a very logical approach to life, which is why when my
+                  high-school Informatics teacher told me my brain worked like a
+                  computer, I knew I wanted to pursue computer science as a
+                  career. I’m thoroughly enjoying my course and am currently on
+                  the fence about whether I want to go into research or
+                  industry. Only time will tell! I am an avid hiker and skier,
+                  so I really love a good mountain, but you won’t hear me
+                  complaining at the beach either!
+                </p>
+                <button
+                  class="special"
+                  onclick="toggle('EllieVitanova', this);"
+                >
+                  More details
+                </button>
+              </article>
+
+              <article>
+                <img alt="" class="image" src="images/team/RokasUrbonas.jpg" />
+                <h3 class="major">Rokas Urbonas</h3>
+                <h4>Team Lead for Lithuania</h4>
+
+                <p class="dropdown-text" id="RokasUrbonas">
+                  Hello! My name is Rokas, and I am a computer science student
+                  at the University of Cambridge. I have been a fan and a
+                  frequent participant of mathematical and computer science
+                  challenges since my early school years.
+                </p>
+                <button class="special" onclick="toggle('RokasUrbonas', this);">
+                  More details
+                </button>
+              </article>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <section id="footer">
+        <div class="inner">
+          <h2 class="major" id="contact">
+            <font style="color: #ab2548">/ </font>Contact us!
+          </h2>
+          <p>
+            Do you have questions about Alphatron, or are you interested in
+            supporting our activities? Please get in touch via email or by
+            filling out the contact form below.
+          </p>
+
+          <form id="form1">
+            <div class="fields">
+              <div class="field">
+                <label for="form1-name">Full name</label>
+                <input id="form1-name" name="name" type="text" />
+              </div>
+              <div class="field">
+                <label for="form1-email">Email</label>
+                <input id="form1-email" name="email" type="email" />
+              </div>
+              <div class="field">
+                <label for="form1-message">Message</label>
+                <textarea id="form1-message" name="message" rows="4"></textarea>
+              </div>
             </div>
-        </nav>
-        <!-- Wrapper -->
-        <section id="wrapper">
-            <header>
-                <div class="inner">
-                    <center>
-                        <!-- <h2><font style="color:#ab2548;">< </font> A  <font style="color:#ab2548;">/ </font> csapatunk <font style="color:#ab2548;">> </font></h2> -->
-                        <h2> Our team </h2>
-                    </center>
-                    <p>Meet the team that is behind this initiative!</p>
-                </div>
-            </header>
+            <ul class="actions">
+              <li>
+                <input
+                  id="form1-button"
+                  onclick="if(verifyForm('form1')){SubForm();}"
+                  type="button"
+                  value="Send"
+                />
+              </li>
+            </ul>
+          </form>
+          <script>
+            initForm("form1");
+          </script>
 
-            <!-- Content -->
-            <div class="wrapper">
-                <div class="inner">
-
-                    <h3 class="major">
-                        <font style="color:#ab2548;">/ </font>Who are we?
-                    </h3>
-                    <p>Our organising team is made up of enthusiastic volunteers who are dedicated to the cause of
-                        creating
-                        opportunities for the youth to get to know the field of computer science. Many organsiers are
-                        tutoring students or are taking part in talent development as a hobby beside their career in
-                        computer science.<br>
-                        We believe that today's mainstream methods of education are not suitable for portraying computer
-                        science as an interesting and fun field, which is why we want to use our decades of experience
-                        in
-                        teaching to popularize new ways of approaching informatics.<br>
-                        This challenge is one step in that direction. Our contestants will experience that the problems
-                        that
-                        arise in the life of a programmer can be fun and enjoyable.
-                    </p>
-                    <p></p>
-
-                    <section class="features">
-
-                        <article>
-                            <img alt="" class="image" src="images/team/WeiszAgoston.jpg" />
-                            <h3 class="major">Agoston Weisz</h3>
-                            <h4>Main Event Organiser<br>‎</h4>
-                            <p class="dropdown-text" id="Weisz-Agoston">
-                                I am Weisz Agoston, a Senior Software Engineer at Google in Zurich.<br>
-                                I have spent my high-school years at the Fazekas Mihály Primary and Secondary Grammar
-                                School
-                                of Budapest, in a mathematics-focused class, from where I have gone to ELTE for a
-                                research
-                                MSc in mathematics.
-                                Középiskolás tanulmányaimat a Budapesti Fazekas Mihály Gyakorló Általános Iskola és
-                                I have won a bronze medal at the International Olympiad in Informatics, got first place
-                                at
-                                the Sapientia international informatics olympiad, and got third place twice on the
-                                KPI-open
-                                international team contest.
-                                Since 2013, I have received an award from the prime minister every year for my
-                                successful
-                                teaching - I have had at least one student on the international olympiads every
-                                year.<br>
-                                I am dedicated to providing the best possible education to as many people as I can.<br>
-                                In my free time, I cycle, ski and play football in the Google Zurich football team.
-                            </p>
-                            <button class="special" onclick="toggle('Weisz-Agoston', this);">
-                                More details
-                            </button>
-                        </article>
-                        <article>
-                            <img alt="" class="image" src="images/team/SzokeNora.jpg" />
-                            <h3 class="major">Nora Szoke</h3>
-                            <h4>Main Event Organiser and Back-End Developer</h4>
-                            <p class="dropdown-text" id="Szoke-Nora">
-                                I am Nora Szoke, mathematician and web developer.
-                                Mathematics has been my passion ever since my childhood, I have succesfully participated
-                                in
-                                a lot of contests as a high schooler.
-                                I had obtained my Érettségi at the special mathematics class of the Fazekas Mihály
-                                Primary
-                                and Secondary Grammar School
-                                of Budapest, after which I continued my studies as a mathematician at ELTE, with a PhD
-                                at
-                                abstract algebra on the
-                                Polytechnique Fédérale de Lausanne university in École, Switzerland. After a couple of
-                                years, I have abandoned research to pursue a career in web development in
-                                France.<br><br>
-                                Besides mathematics, I have always been very interested in teaching and nurturing
-                                talent.
-                                I have taken part in organizing the Medve Outdoors Mathematics Competition in Hungary
-                                every
-                                year since 2008.
-                                As one of the founding members of the A Matematika Összeköt Egyesület in Hungary, I have
-                                been teaching interested students mathematics for more than a decade.<br><br>
-                                As a hobby, I read a lot about biology and psychology, and do a lot of exercise: my
-                                favourite sports are hiking, wakeboard, wall climbing and pole sports.
-                            </p>
-                            <button class="special" onclick="toggle('Szoke-Nora', this);">
-                                More details
-                            </button>
-                        </article>
-                        <article>
-                            <img alt="" class="image" src="images/team/SzaboKornel.jpg" />
-                            <h3 class="major">Kornel Szabo</h3>
-                            <h4>Main Event Organiser and Front-End Developer</h4>
-
-                            <p class="dropdown-text" id="Szabo-Kornel">
-                                I'm Kornel Szabo, a computer science student at the University of Cambridge.<br><br>
-                                I have spent my high school years at the special mathematics class of the Fazekas Mihály
-                                Primary
-                                and Secondary Grammar School. I have already done a lot of mathematics and competitive
-                                programming in these years, which has allowed me to get bronze medals at the
-                                International
-                                Olympiad in Informatics, the International Mathematical Olympiad, the Central-European
-                                Olympiad in Informatics and a silver medal at the Middle-European Olympiad in
-                                Mathematics.
-                                <br><br>
-                                I was also successful in Hungarian competitions, I came second in the Hungarian Olympiad
-                                in
-                                Informatics, and 10th on the Hungarian Olympiad in Mathematics.
-                                In my final year at high school, I started teaching in Alphacademy, where we teach
-                                programming for hundreds of students. I have already had some experience by that point,
-                                as I
-                                had already helped with organising Pósa-camps as a high schooler.
-                                <br>
-                                My hobbies include running, cycling, hiking, wall climbing and reading about economics,
-                                philosophy and history.
-                            </p>
-                            <button class="special" onclick="toggle('Szabo-Kornel', this);">More details
-                            </button>
-                        </article>
-                        <article>
-                            <img alt="" class="image" src="images/team/HorvathZsombor.jpg" />
-                            <h3 class="major">Zsombor Horvath</h3>
-                            <h4>Backend Developer</h4>
-
-                            <p class="dropdown-text" id="Zsombor-Horvath">
-                                My name is Zsombor Horvath, I am a web developer and a junior student at Fazekas High
-                                School in Budapest.
-                                <br>
-                                Besides my school studies, I have been learning to code for a long time in a self-taught
-                                way. I work for an ed-tech company called Redmenta as a software engineer. Furthermore,
-                                I teach C++ programming language and algorithms to students in Alphacademy. Thanks to my
-                                American connections, I managed to spend a semester in the United States, where besides
-                                establishing new connections, I could improve my language skills as well. With the help
-                                of my friend, we won 3rd prize in the Hungarian Innovation Competition with our study
-                                about decentralized logistics systems.
-                                <br>
-                                I am also an active participant in various hackathons, which are usually held offline.
-                                My other hobbies include studying artificial intelligence, reading, and going to the
-                                gym.
-                            </p>
-                            <button class="special" onclick="toggle('Zsombor-Horvath', this);">More details
-                            </button>
-                        </article>
-
-                        <article>
-                            <img alt="" class="image" src="images/team/WillPinkerton.jpg" />
-                            <h3 class="major">Will Pinkerton</h3>
-                            <h4>Organiser</h4>
-
-                            <p class="dropdown-text" id="Will-Pinkerton">
-                                Hello! I'm Will, a computer science student at the University of Cambridge. In the past
-                                I have performed in a few hackathons, and attended various cybersecurity bootcamps. I
-                                enjoy the problem-solving nature of computer science, and the intricacies that come
-                                along with scaling solutions. My hobbies include boxing, reading, and coding.</p>
-                            <button class="special" onclick="toggle('Will-Pinkerton', this);">More details
-                            </button>
-                        </article>
-
-                        <article>
-                            <img alt="" class="image" src="images/team/JerielChua.jpg" />
-                            <h3 class="major">Jeriel Chua</h3>
-                            <h4>Leader of Team Singapore</h4>
-
-                            <p class="dropdown-text" id="Jeriel-Chua">
-                                Hi! I’m Jeriel, a linguistics undergraduate student at the University of Cambridge.
-
-                                I enjoy thinking about the structure and organisation of English and other languages. To
-                                me,
-                                there are many parallels in the ways linguists go about thinking about the syntax
-                                (grammar)
-                                of natural languages and the ways programmers issue computers instructions through the
-                                medium of code — which is in many ways a language of its own.
-
-                                My pastimes include constructing linguistic diagrams, teaching, keeping fit, and
-                                spending
-                                time outdoors — walking about zoos and gardens.
-                            </p>
-                            <button class="special" onclick="toggle('Jeriel-Chua', this);">More details</button>
-                        </article>
-
-                        <article>
-                            <img alt="" class="image" src="images/team/WooJiaHao.jpg" />
-                            <h3 class="major">Woo Jia Hao</h3>
-                            <h4>Member of Team Singapore</h4>
-
-                            <p class="dropdown-text" id="WooJiaHao">
-                                Hello! I am Jia Hao. I started my journey in software at 15 and have been a part of
-                                different projects — from developing gesture-based accessibility frameworks in Android
-                                to
-                                conducting research in Natural Language Processing (NLP)! I also talk about software and
-                                open-source on my blog and create guides to help developers lay their foundations in
-                                various
-                                areas like Android development and version control. In my downtime, I like going for
-                                jogs,
-                                watching Marvel shows, and hanging out with my friends.
-                            </p>
-                            <button class="special" onclick="toggle('WooJiaHao', this);">More details</button>
-                        </article>
-
-                        <article>
-                            <img alt="" class="image" src="images/team/ChenJiaWei.jpg" />
-                            <h3 class="major">Chen Jia Wei</h3>
-                            <h4>Member of Team Singapore</h4>
-
-                            <p class="dropdown-text" id="ChenJiaWei">
-                                Hi, I'm Jia Wei, a first year Business Analytics student studying in the National
-                                University
-                                of Singapore. I'm relatively new to the field of computing and I'm currently exploring
-                                the
-                                different areas of computing. Currently, I aspire to work in financial or marketing
-                                analytics. My hobbies are astronomy, playing all sorts games and recreational sports
-                                such as
-                                badminton.
-
-                            </p>
-                            <button class="special" onclick="toggle('ChenJiaWei', this);">More details</button>
-                        </article>
-
-                        <article>
-                            <img alt="" class="image" src="images/team/ChenGuanZhou.jpg" />
-                            <h3 class="major">Chen Guan Zhou</h3>
-                            <h4>Member of Team Singapore</h4>
-
-                            <p class="dropdown-text" id="ChenGuanZhou">
-                                I'm Guanzhou, a computer science student at the National University of Singapore.
-
-                                My journey in computer science has been exciting thus far and I look forward to
-                                exploring
-                                more domains in computer science. I love problem solving and algorithmic thinking and I
-                                am
-                                particularly interested in software engineering and quantitative finance fields.
-
-                                In my free time, I enjoy playing chess and racket sports such as badminton and squash
-
-
-                            </p>
-                            <button class="special" onclick="toggle('ChenGuanZhou', this);">More details</button>
-                        </article>
-
-                        <article>
-                            <img alt="" class="image" src="images/team/AlvinJiang.jpg" />
-                            <h3 class="major">Alvin Jiang</h3>
-                            <h4>Member of Team Singapore</h4>
-
-                            <p class="dropdown-text" id="AlvinJiang">
-                                Hello! I’m Alvin, a Year 1 student studying Computer Science at National University of
-                                Singapore. In the past, I have participated in a few Math Olympiad and Physics Olympiad
-                                competitions, and really enjoyed trying to solve those tough problems and feeling the
-                                rush
-                                of learning new techniques and concepts. In computer science, these problems are much
-                                more
-                                dynamic and interesting, which is why I am excited for this opportunity to bring the joy
-                                of
-                                problem solving to kids! In my free time, I like playing badminton, cycling and just
-                                being
-                                outdoors.
-                            </p>
-                            <button class="special" onclick="toggle('AlvinJiang', this);">More details</button>
-                        </article>
-
-                    </section>
-
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- Footer -->
-        <section id="footer">
-            <div class="inner">
-                <h2 class="major" id="contact">
-                    <font style="color:#ab2548;">/ </font>Contact us!
-                </h2>
-                <p>Do you have questions about Alphatron or are you interested in supporting our activities?
-                    Please get in touch via email or by filling out the contact form below.</p>
-
-                <form id="form1">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="form1-name">Full name</label>
-                            <input id="form1-name" name="name" type="text" />
-                        </div>
-                        <div class="field">
-                            <label for="form1-email">Email</label>
-                            <input id="form1-email" name="email" type="email" />
-                        </div>
-                        <div class="field">
-                            <label for="form1-message">Message</label>
-                            <textarea id="form1-message" name="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input id="form1-button" onclick="if(verifyForm('form1')){SubForm();}" type="button"
-                                value="Send" /></li>
-                    </ul>
-                </form>
-                <script>initForm('form1');</script>
-
-                <ul class="contact">
-                    <li class="icon solid fa-envelope"><a href="#">alphatron2022@gmail.com</a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
-        </section>
+          <ul class="contact">
+            <li class="icon solid fa-envelope">
+              <a href="#">alphatron2022@gmail.com</a>
+            </li>
+          </ul>
+          <ul class="copyright">
+            <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+          </ul>
+        </div>
+      </section>
     </div>
 
     <!-- Scripts -->
@@ -428,7 +523,5 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
-
-</body>
-
+  </body>
 </html>

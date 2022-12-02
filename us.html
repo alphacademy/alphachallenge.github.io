@@ -1,300 +1,375 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <!--
 	Solid State by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html lang="en">
-<head>
+  <head>
     <title>Alphatron</title>
-    <link href="/images/favicon.ico" rel="icon" type="images/x-icon">
-    <meta charset="utf-8"/>
-    <meta content="Alphatron computer science competition for students aged between 8 and 16" name="title"/>
-    <meta content="Alphatron is a computer science competition for those students in primary or secondary education, that aren't afraid of challenges and like fun puzzles and problems. Taking part is free and the contestants can win valuable prizes."
-          name="description"/>
-    <meta content="programming, computer science, computer, science, competition, contest, prize, win, problem, puzzle, thinking, challenge, challenging, smart, student, pupil, child, children, school, fun, primary school, secondary school, studies, free, interesting, fascinating"
-          name="keywords"/>
-    <meta content="Alphatron" name="author"/>
-    <meta content="width=device-width, initial-scale=1, user-scalable=no" name="viewport"/>
-    <link href="assets/css/main.css" rel="stylesheet"/>
-    <link href="https://alphatron.io/" rel="canonical"/>
+    <link href="/images/favicon.ico" rel="icon" type="images/x-icon" />
+    <meta charset="utf-8" />
+    <meta
+      content="Alphatron computer science competition for students aged between 8 and 16"
+      name="title"
+    />
+    <meta
+      content="Alphatron is a computer science competition for those students in primary or secondary education, that aren't afraid of challenges and like fun puzzles and problems. Taking part is free and the contestants can win valuable prizes."
+      name="description"
+    />
+    <meta
+      content="programming, computer science, computer, science, competition, contest, prize, win, problem, puzzle, thinking, challenge, challenging, smart, student, pupil, child, children, school, fun, primary school, secondary school, studies, free, interesting, fascinating"
+      name="keywords"
+    />
+    <meta content="Alphatron" name="author" />
+    <meta
+      content="width=device-width, initial-scale=1, user-scalable=no"
+      name="viewport"
+    />
+    <link href="assets/css/main.css" rel="stylesheet" />
+    <link href="https://alphatron.io/" rel="canonical" />
     <script src="./assets/js/toggle.js"></script>
     <script src="./assets/js/validateForm.js"></script>
     <script src="./assets/js/initForm.js"></script>
     <script
-            crossorigin="anonymous"
-            integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-            src="https://code.jquery.com/jquery-3.4.1.js"></script>
+      crossorigin="anonymous"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      src="https://code.jquery.com/jquery-3.4.1.js"
+    ></script>
     <script>
-        function SubForm() {
-            let btn = document.getElementById('form1-button');
-            btn.setAttribute('value', 'Sending message');
+      function SubForm() {
+        let btn = document.getElementById("form1-button");
+        btn.setAttribute("value", "Sending message");
 
-            $.ajax({
-                url: "https://api.apispreadsheets.com/data/XEVQj1gUX7Dp9Riu/",
-                type: "post",
-                data: $("#form1").serializeArray(),
-                success: function () {
-                    btn.setAttribute('value', 'Send');
-                    alert("Successfully sent!");
-                },
-                error: function () {
-                    btn.setAttribute('value', 'Send');
-                    alert("An error has occured while processing the message. Please try again.");
-                }
-            });
-        }
+        $.ajax({
+          url: "https://api.apispreadsheets.com/data/XEVQj1gUX7Dp9Riu/",
+          type: "post",
+          data: $("#form1").serializeArray(),
+          success: function () {
+            btn.setAttribute("value", "Send");
+            alert("Successfully sent!");
+          },
+          error: function () {
+            btn.setAttribute("value", "Send");
+            alert(
+              "An error has occured while processing the message. Please try again."
+            );
+          },
+        });
+      }
     </script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3HNB4YBCS3"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-3HNB4YBCS3"
+    ></script>
     <script>
-        window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || [];
 
-        function gtag() {
-            dataLayer.push(arguments);
-        }
+      function gtag() {
+        dataLayer.push(arguments);
+      }
 
-        gtag('js', new Date());
+      gtag("js", new Date());
 
-        gtag('config', 'G-3HNB4YBCS3');
+      gtag("config", "G-3HNB4YBCS3");
     </script>
     <script>
-        function redirect(url) {
-            window.open(url, '_blank');
-        }
+      function redirect(url) {
+        window.open(url, "_blank");
+      }
     </script>
     <noscript>
-        <link href="assets/css/noscript.css" rel="stylesheet"/>
+      <link href="assets/css/noscript.css" rel="stylesheet" />
     </noscript>
-</head>
-<body class="is-preload">
-
-<!-- Page Wrapper -->
-<div id="page-wrapper">
-
-    <!-- Header -->
-    <header class="alt" id="header">
-        <h1><a href="index.html"><font style="color:#ab2548;">/ </font>Alphatron competition</a></h1>
+  </head>
+  <body class="is-preload">
+    <!-- Page Wrapper -->
+    <div id="page-wrapper">
+      <!-- Header -->
+      <header class="alt" id="header">
+        <h1>
+          <a href="index.html"
+            ><font style="color: #ab2548">/ </font>Alphatron competition</a
+          >
+        </h1>
         <nav>
-            <a href="#menu">Menu</a>
+          <a href="#menu">Menu</a>
         </nav>
         <!-- TODO: Change this -->
-        <script>function applyNow() {
-            window.open('https://contest.alphatron.io/registration', '_blank');
-        }</script>
-        <script>function competitionRules() {
-            window.open('https://contest.alphatron.io/competition-rules', '_blank');
-        }</script>
-    </header>
+        <script>
+          function applyNow() {
+            window.open("https://contest.alphatron.io/registration", "_blank");
+          }
+        </script>
+        <script>
+          function competitionRules() {
+            window.open(
+              "https://contest.alphatron.io/competition-rules",
+              "_blank"
+            );
+          }
+        </script>
+      </header>
 
-    <!-- Menu -->
-    <nav id="menu">
+      <!-- Menu -->
+      <nav id="menu">
         <div class="inner">
-            <h2>Menu</h2>
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#contest">About</a></li>
-                <li><a href="https://contest.alphatron.io/competition-rules">Rules</a></li>
-                <li><a href="team.html">Organisers</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <a class="close" href="#">Close</a>
+          <h2>Menu</h2>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#contest">About</a></li>
+            <li>
+              <a href="https://contest.alphatron.io/competition-rules">Rules</a>
+            </li>
+            <li><a href="team.html">Organisers</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <a class="close" href="#">Close</a>
         </div>
-    </nav>
+      </nav>
 
-    <!-- Banner -->
-    <section id="banner">
+      <!-- Banner -->
+      <section id="banner">
         <div class="inner">
-            <h2><img alt="" class="center" src="images/logo.png" width=100%/></h2>
-            <p>Try yourself as a white-hat hacker!<br>Take part in our playful programming competition for 8-16 year
-                olds and their families.</p>
-            <!-- <div class="align-center">
+          <h2>
+            <img alt="" class="center" src="images/logo.png" width="100%" />
+          </h2>
+          <p>
+            Try yourself as a white-hat hacker!<br />Take part in our playful
+            programming competition for 8-16 year olds and their families.
+          </p>
+          <!-- <div class="align-center">
                 <button onclick="applyNow()">Jelentkezz most!</button>
             </div> -->
         </div>
-    </section>
+      </section>
 
-    <!-- Wrapper -->
-    <section id="wrapper">
-
+      <!-- Wrapper -->
+      <section id="wrapper">
         <!-- One -->
         <section class="wrapper spotlight style1" id="contest">
-            <div class="inner">
-                <img alt="" class="image" src="images/intro0.png"/>
-                <div class="content">
-                    <h2 class="major"><font style="color:#ab2548;">/ </font>playful programming competition for 8-16
-                        year olds and their families.</h2>
-                    <!--                     <font style="color:#ab2548;">< </font> A  <font style="color:#ab2548;">/ </font> versenyről <font style="color:#ab2548;">> </font> </h2> -->
-                    <p>
-                        We’re inviting you to join our group of ethical hackers on a problem-solving adventure, tackling
-                        villains by solving logic-based puzzles as part of a team! Successful competitors will be
-                        rewarded with exciting prizes, alongside membership in our exclusive Ethical Hackers’ Alpha
-                        Club. <br>
-                        Thrilling 90-minute challenges in a virtual setting – the essence of Alphatron.<br>
-                        <span style="font-weight: bold">WHEN?</span> To be announced<br>
-                        <span style="font-weight: bold">WHERE?</span> Alphatron is an exclusively online
-                        competition<br>
-                        <span style="font-weight: bold">PARTICIPATION FEE:</span> Participation is free of charge
-                    </p>
-                    <div class="align-right">
-                        <button onclick="applyNow()">Register now!</button>
-                    </div>
-
-                </div>
+          <div class="inner">
+            <img alt="" class="image" src="images/intro0.png" />
+            <div class="content">
+              <h2 class="major">
+                <font style="color: #ab2548">/ </font>playful programming
+                competition for 8-16 year olds and their families.
+              </h2>
+              <!--                     <font style="color:#ab2548;">< </font> A  <font style="color:#ab2548;">/ </font> versenyről <font style="color:#ab2548;">> </font> </h2> -->
+              <p>
+                We’re inviting you to join our group of ethical hackers on a
+                problem-solving adventure, tackling villains by solving
+                logic-based puzzles as part of a team! Successful competitors
+                will be rewarded with exciting prizes, alongside membership in
+                our exclusive Ethical Hackers’ Alpha Club. <br />
+                Thrilling 90-minute challenges in a virtual setting – the
+                essence of Alphatron.<br />
+                <span style="font-weight: bold">WHEN?</span> To be announced<br />
+                <span style="font-weight: bold">WHERE?</span> Alphatron is an
+                exclusively online competition<br />
+                <span style="font-weight: bold">PARTICIPATION FEE:</span>
+                Participation is free of charge
+              </p>
+              <div class="align-right">
+                <button onclick="applyNow()">Register now!</button>
+              </div>
             </div>
+          </div>
         </section>
 
         <!-- Two -->
         <section class="wrapper alt spotlight style2" id="two">
-            <div class="inner">
-                <img alt="" class="image" src="images/kinekszol0.png"/>
-                <div class="content">
-                    <h2 class="major"><font style="color:#ab2548;">/ </font>Who can enter?</h2>
-                    <p>
-                        Are you passionate about combatting cybercrime, intrigued by the world of computer science, or
-                        simply enjoy a playful challenge? Alphatron has got you covered.<br>
-                        Never tried programming before? Not to worry, all you need – alongside a stable internet
-                        connection - is a love of puzzles and adventure.<br>
-                        The challenge is open to teams of one to four participants, in the following five
-                        categories:<br>
-                        Category I: Grades 3-4 (ages 8-10)<br>
-                        Category II: Grades 5-6 (ages 10-12)<br>
-                        Category III: Grades 7-8 (ages 12-14)<br>
-                        Category IV: Grades 9-10 (ages 14-16)<br>
-                        Category V: Families<br>
-                        Teams entering Category V must include at least one participant aged 8-16.
-                    </p>
-                    <div class="align-left">
-                        <button onclick="applyNow()">Register now!</button>
-                    </div>
-
-                </div>
+          <div class="inner">
+            <img alt="" class="image" src="images/kinekszol0.png" />
+            <div class="content">
+              <h2 class="major">
+                <font style="color: #ab2548">/ </font>Who can enter?
+              </h2>
+              <p>
+                Are you passionate about combatting cybercrime, intrigued by the
+                world of computer science, or simply enjoy a playful challenge?
+                Alphatron has got you covered.<br />
+                Never tried programming before? Not to worry, all you need –
+                alongside a stable internet connection – is a love of puzzles
+                and adventure.<br />
+                The challenge is open to teams of one to four participants in
+                the following five categories:<br />
+                Category I: Grades 3-4 (ages 8-10)<br />
+                Category II: Grades 5-6 (ages 10-12)<br />
+                Category III: Grades 7-8 (ages 12-14)<br />
+                Category IV: Grades 9-10 (ages 14-16)<br />
+                Category V: Families<br />
+                Teams entering Category V must include at least one participant
+                aged 8-16.
+              </p>
+              <div class="align-left">
+                <button onclick="applyNow()">Register now!</button>
+              </div>
             </div>
+          </div>
         </section>
 
         <!-- Three -->
         <section class="wrapper spotlight style3" id="three">
-            <div class="inner">
-                <section class="features">
-                    <img alt="" class="image" src="images/ajandek0.png"/>
-                </section>
-                <div class="content">
-                    <h2 class="major"><font style="color:#ab2548;">/ </font>Ranking</h2>
-                    <p>
-                        Preventing a cyberattack involves collaboration, and all participants will receive a certificate
-                        in acknowledgement of their contribution. <br>
-                        All teams will receive a bronze, silver, gold or platinum rating. Those with a gold or platinum
-                        rating will be admitted to the virtual Alpha Challenge programming community. 
-                    </p>
-                    <div class="align-right">
-                        <button onclick="competitionRules()">Competition rules</button>
-                        <button onclick="applyNow()">Register now!</button>
-                    </div>
-
-                </div>
+          <div class="inner">
+            <section class="features">
+              <img alt="" class="image" src="images/ajandek0.png" />
+            </section>
+            <div class="content">
+              <h2 class="major">
+                <font style="color: #ab2548">/ </font>Ranking
+              </h2>
+              <p>
+                Preventing a cyberattack involves collaboration, and all
+                participants will receive a certificate in acknowledgement of
+                their contribution. <br />
+                All teams will receive a bronze, silver, gold or platinum
+                rating. Those with a gold or platinum rating will be admitted to
+                the virtual Alpha Challenge programming community.
+              </p>
+              <div class="align-right">
+                <button onclick="competitionRules()">Competition rules</button>
+                <button onclick="applyNow()">Register now!</button>
+              </div>
             </div>
+          </div>
         </section>
 
         <!-- Four -->
         <section class="wrapper alt style1" id="four">
-            <div class="inner">
-                <h2 class="major"><font style="color:#ab2548;">/ </font>The Alphatron Team</h2>
-                <p>Meet our main organizers!</p>
-                <section class="features">
-                    <article>
-                        <img alt="" class="image" src="images/team/WeiszAgoston.jpg"/>
-                        <h3 class="major">Agoston Weisz</h3>
-                        <h4>Main Event Organiser<br>‎</h4>
-                        <p class="dropdown-text" id="Weisz-Agoston">
-                            I am Weisz Agoston, a Senior Software Engineer at Google in Zurich.<br>
-                            I have spent my high-school years at the Fazekas Mihály Primary and Secondary Grammar School
-                            of Budapest, in a mathematics-focused class, from where I have gone to ELTE for a research
-                            MSc in mathematics.
-                            Középiskolás tanulmányaimat a Budapesti Fazekas Mihály Gyakorló Általános Iskola és
-                            I have won a bronze medal at the International Olympiad in Informatics, got first place at
-                            the Sapientia international informatics olympiad, and got third place twice on the KPI-open
-                            international team contest.
-                            Since 2013, I have received an award from the prime minister every year for my successful
-                            teaching - I have had at least one student on the international olympiads every year.<br>
-                            I am dedicated to providing the best possible education to as many people as I can.<br>
-                            In my free time, I cycle, ski and play football in the Google Zurich football team.
-                        </p>
-                        <button class="special" onclick="toggle('Weisz-Agoston', this);">
-                            More details
-                        </button>
-                    </article>
-                    <article>
-                        <img alt="" class="image" src="images/team/SzokeNora.jpg"/>
-                        <h3 class="major">Nora Szoke</h3>
-                        <h4>Main Event Organiser and Back-End Developer</h4>
-                        <p class="dropdown-text" id="Szoke-Nora">
-                            I am Nora Szoke, mathematician and web developer.
-                            Mathematics has been my passion ever since my childhood, I have succesfully participated in
-                            a lot of contests as a high schooler.
-                            I had obtained my Érettségi at the special mathematics class of the Fazekas Mihály Primary
-                            and Secondary Grammar School
-                            of Budapest, after which I continued my studies as a mathematician at ELTE, with a PhD at
-                            abstract algebra on the
-                            Polytechnique Fédérale de Lausanne university in École, Switzerland. After a couple of
-                            years, I have abandoned research to pursue a career in web development in France.<br><br>
-                            Besides mathematics, I have always been very interested in teaching and nurturing talent.
-                            I have taken part in organizing the Medve Outdoors Mathematics Competition in Hungary every
-                            year since 2008.
-                            As one of the founding members of the A Matematika Összeköt Egyesület in Hungary, I have
-                            been teaching interested students mathematics for more than a decade.<br><br>
-                            As a hobby, I read a lot about biology and psychology, and do a lot of exercise: my
-                            favourite sports are hiking, wakeboard, wall climbing and pole sports.
-                        </p>
-                        <button class="special" onclick="toggle('Szoke-Nora', this);">
-                            More details
-                        </button>
-                    </article>
-                    <article>
-                        <img alt="" class="image" src="images/team/SzaboKornel.jpg"/>
-                        <h3 class="major">Kornel Szabo</h3>
-                        <h4>Main Event Organiser and Front-End Developer</h4>
+          <div class="inner">
+            <h2 class="major">
+              <font style="color: #ab2548">/ </font>The Alphatron Team
+            </h2>
+            <p>Meet our main organizers!</p>
+            <section class="features">
+              <article>
+                <img alt="" class="image" src="images/team/WeiszAgoston.jpg" />
+                <h3 class="major">Agoston Weisz</h3>
+                <h4>Main Event Organiser<br />‎</h4>
+                <p class="dropdown-text" id="Weisz-Agoston">
+                  I am Weisz Agoston, a Senior Software Engineer at Google in
+                  Zurich.<br />
+                  I have spent my high-school years at the Fazekas Mihály
+                  Primary and Secondary Grammar School of Budapest, in a
+                  mathematics-focused class, from where I have gone to ELTE for
+                  a research MSc in mathematics. Középiskolás tanulmányaimat a
+                  Budapesti Fazekas Mihály Gyakorló Általános Iskola és I have
+                  won a bronze medal at the International Olympiad in
+                  Informatics, got first place at the Sapientia international
+                  informatics olympiad, and got third place twice on the
+                  KPI-open international team contest. Since 2013, I have
+                  received an award from the prime minister every year for my
+                  successful teaching - I have had at least one student on the
+                  international olympiads every year.<br />
+                  I am dedicated to providing the best possible education to as
+                  many people as I can.<br />
+                  In my free time, I cycle, ski and play football in the Google
+                  Zurich football team.
+                </p>
+                <button
+                  class="special"
+                  onclick="toggle('Weisz-Agoston', this);"
+                >
+                  More details
+                </button>
+              </article>
+              <article>
+                <img alt="" class="image" src="images/team/SzokeNora.jpg" />
+                <h3 class="major">Nora Szoke</h3>
+                <h4>Main Event Organiser and Back-End Developer</h4>
+                <p class="dropdown-text" id="Szoke-Nora">
+                  I am Nora Szoke, mathematician and web developer. Mathematics
+                  has been my passion ever since my childhood, I have
+                  succesfully participated in a lot of contests as a high
+                  schooler. I had obtained my Érettségi at the special
+                  mathematics class of the Fazekas Mihály Primary and Secondary
+                  Grammar School of Budapest, after which I continued my studies
+                  as a mathematician at ELTE, with a PhD at abstract algebra on
+                  the Polytechnique Fédérale de Lausanne university in École,
+                  Switzerland. After a couple of years, I have abandoned
+                  research to pursue a career in web development in France.<br /><br />
+                  Besides mathematics, I have always been very interested in
+                  teaching and nurturing talent. I have taken part in organizing
+                  the Medve Outdoors Mathematics Competition in Hungary every
+                  year since 2008. As one of the founding members of the A
+                  Matematika Összeköt Egyesület in Hungary, I have been teaching
+                  interested students mathematics for more than a decade.<br /><br />
+                  As a hobby, I read a lot about biology and psychology, and do
+                  a lot of exercise: my favourite sports are hiking, wakeboard,
+                  wall climbing and pole sports.
+                </p>
+                <button class="special" onclick="toggle('Szoke-Nora', this);">
+                  More details
+                </button>
+              </article>
+              <article>
+                <img alt="" class="image" src="images/team/SzaboKornel.jpg" />
+                <h3 class="major">Kornel Szabo</h3>
+                <h4>Main Event Organiser and Front-End Developer</h4>
 
-                        <p class="dropdown-text" id="Szabo-Kornel">
-                            I'm Kornel Szabo, a computer science student at the University of Cambridge.<br><br>
-                            I have spent my high school years at the special mathematics class of the Fazekas Mihály
-                            Primary
-                            and Secondary Grammar School. I have already done a lot of mathematics and competitive
-                            programming in these years, which has allowed me to get bronze medals at the International
-                            Olympiad in Informatics, the International Mathematical Olympiad, the Central-European
-                            Olympiad in Informatics and a silver medal at the Middle-European Olympiad in Mathematics.
-                            <br><br>
-                            I was also successful in Hungarian competitions, I came second in the Hungarian Olympiad in Informatics, and 10th on the Hungarian Olympiad in Mathematics.
-                            In my final year at high school, I started teaching in Alphacademy, where we teach programming for hundreds of students. I have already had some experience by that point, as I had already helped with organising Pósa-camps as a high schooler.
-                            <br>
-                            My hobbies include running, cycling, hiking, wall climbing and reading about economics, philosophy and history.</p>
-                        <button class="special" onclick="toggle('Szabo-Kornel', this);">More details
-                        </button>
-                    </article>
-
-
-                </section>
-                <div class="align-center"><a class="button" href="team.html">Meet the rest of the team</a></div>
+                <p class="dropdown-text" id="Szabo-Kornel">
+                  I'm Kornel Szabo, a computer science student at the University
+                  of Cambridge.<br /><br />
+                  I have spent my high school years at the special mathematics
+                  class of the Fazekas Mihály Primary and Secondary Grammar
+                  School. I have already done a lot of mathematics and
+                  competitive programming in these years, which has allowed me
+                  to get bronze medals at the International Olympiad in
+                  Informatics, the International Mathematical Olympiad, the
+                  Central-European Olympiad in Informatics and a silver medal at
+                  the Middle-European Olympiad in Mathematics.
+                  <br /><br />
+                  I was also successful in Hungarian competitions, I came second
+                  in the Hungarian Olympiad in Informatics, and 10th on the
+                  Hungarian Olympiad in Mathematics. In my final year at high
+                  school, I started teaching in Alphacademy, where we teach
+                  programming for hundreds of students. I have already had some
+                  experience by that point, as I had already helped with
+                  organising Pósa-camps as a high schooler.
+                  <br />
+                  My hobbies include running, cycling, hiking, wall climbing and
+                  reading about economics, philosophy and history.
+                </p>
+                <button class="special" onclick="toggle('Szabo-Kornel', this);">
+                  More details
+                </button>
+              </article>
+            </section>
+            <div class="align-center">
+              <a class="button" href="team.html">Meet the rest of the team</a>
             </div>
+          </div>
         </section>
 
         <section class="wrapper spotlight style1" id="five">
-            <div class="inner">
-                <div class="content">
-                    <h2 class="major"><font style="color:#ab2548;">/ </font>Our Sponsors</h2>
-                    <p>Get to know our sponsors!<br>
-                        We thank you for your continued generosity.
-                    </p>
-                </div>
+          <div class="inner">
+            <div class="content">
+              <h2 class="major">
+                <font style="color: #ab2548">/ </font>Our Sponsors
+              </h2>
+              <p>
+                Get to know our sponsors!<br />
+                We thank you for your continued generosity.
+              </p>
             </div>
-            <div class="inner">
-                <div class="content">
-                    <h2><font style="color:#ab2548;">/ </font>Platinum-level<br>sponsors</h2>
-                </div>
-                <img alt="" class="image noborder" onclick="redirect('https://www.weareworldquant.com/en/home')"
-                     src="images/logos/worldquant_logo.png"/>
-
+          </div>
+          <div class="inner">
+            <div class="content">
+              <h2>
+                <font style="color: #ab2548">/ </font
+                >Platinum-level<br />sponsors
+              </h2>
             </div>
-            <!--
+            <img
+              alt=""
+              class="image noborder"
+              onclick="redirect('https://www.weareworldquant.com/en/home')"
+              src="images/logos/worldquant_logo.png"
+            />
+          </div>
+          <!--
             <div class="inner">
                 <div class="content">
                     <h2><font style="color:#ab2548;">/ </font>Aranyfokozatú<br>támogatóink</h2>
@@ -307,67 +382,97 @@
                 </div>
             </div>
             !-->
-            <div class="inner">
-                <div class="content">
-                    <h4><font style="color:#ab2548;">/ </font>Bronze-level<br>sponsors</h4>
-                </div>
-                <img alt="" class="image noborder" onclick="redirect('https://eoptika.hu/')"
-                     src="images/logos/eOptika_logo.png"/>
-                <img alt="" class="image noborder" src="images/logos/AITBP_logo.jpg"/>
-                <img alt="" class="image noborder" onclick="redirect('https://www.gamax.hu/')"
-                     src="images/logos/gamax_logo.jpg"/>
+          <div class="inner">
+            <div class="content">
+              <h4>
+                <font style="color: #ab2548">/ </font>Bronze-level<br />sponsors
+              </h4>
             </div>
+            <img
+              alt=""
+              class="image noborder"
+              onclick="redirect('https://eoptika.hu/')"
+              src="images/logos/eOptika_logo.png"
+            />
+            <img
+              alt=""
+              class="image noborder"
+              src="images/logos/AITBP_logo.jpg"
+            />
+            <img
+              alt=""
+              class="image noborder"
+              onclick="redirect('https://www.gamax.hu/')"
+              src="images/logos/gamax_logo.jpg"
+            />
+          </div>
         </section>
-
 
         <!-- Footer -->
         <section id="footer">
-            <div class="inner">
-                <h2 class="major" id="contact"><font style="color:#ab2548;">/ </font>Contact us!</h2>
-                <p>Do you have questions about Alphatron or are you interested in supporting our activities?
-                    Please get in touch via email or by filling out the contact form below.</p>
+          <div class="inner">
+            <h2 class="major" id="contact">
+              <font style="color: #ab2548">/ </font>Contact us!
+            </h2>
+            <p>
+              Do you have questions about Alphatron, or are you interested in
+              supporting our activities? Please get in touch via email or by
+              filling out the contact form below.
+            </p>
 
-                <form id="form1">
-                    <div class="fields">
-                        <div class="field">
-                            <label for="form1-name">Full name</label>
-                            <input id="form1-name" name="name" type="text"/>
-                        </div>
-                        <div class="field">
-                            <label for="form1-email">Email</label>
-                            <input id="form1-email" name="email" type="email"/>
-                        </div>
-                        <div class="field">
-                            <label for="form1-message">Message</label>
-                            <textarea id="form1-message" name="message" rows="4"></textarea>
-                        </div>
-                    </div>
-                    <ul class="actions">
-                        <li><input id="form1-button" onclick="if(verifyForm('form1')){SubForm();}" type="button"
-                                   value="Send"/></li>
-                    </ul>
-                </form>
-                <script>initForm('form1');</script>
+            <form id="form1">
+              <div class="fields">
+                <div class="field">
+                  <label for="form1-name">Full name</label>
+                  <input id="form1-name" name="name" type="text" />
+                </div>
+                <div class="field">
+                  <label for="form1-email">Email</label>
+                  <input id="form1-email" name="email" type="email" />
+                </div>
+                <div class="field">
+                  <label for="form1-message">Message</label>
+                  <textarea
+                    id="form1-message"
+                    name="message"
+                    rows="4"
+                  ></textarea>
+                </div>
+              </div>
+              <ul class="actions">
+                <li>
+                  <input
+                    id="form1-button"
+                    onclick="if(verifyForm('form1')){SubForm();}"
+                    type="button"
+                    value="Send"
+                  />
+                </li>
+              </ul>
+            </form>
+            <script>
+              initForm("form1");
+            </script>
 
-                <ul class="contact">
-                    <li class="icon solid fa-envelope"><a href="#">alphatron2022@gmail.com</a></li>
-                </ul>
-                <ul class="copyright">
-                    <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-                </ul>
-            </div>
+            <ul class="contact">
+              <li class="icon solid fa-envelope">
+                <a href="#">alphatron2022@gmail.com</a>
+              </li>
+            </ul>
+            <ul class="copyright">
+              <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+            </ul>
+          </div>
         </section>
-    </section>
+      </section>
+    </div>
 
-</div>
-
-<!-- Scripts -->
-<script src="assets/js/jquery.min.js"></script>
-<script src="assets/js/jquery.scrollex.min.js"></script>
-<script src="assets/js/browser.min.js"></script>
-<script src="assets/js/breakpoints.min.js"></script>
-<script src="assets/js/util.js"></script>
-<script src="assets/js/main.js"></script>
-
-</body>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
